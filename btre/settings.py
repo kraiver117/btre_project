@@ -120,6 +120,6 @@ USE_TZ = True
 
 STATIC_ROOT = Path.joinpath(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATIC_FILES_DIRS = [
+STATICFILES_DIRS = [
     Path.joinpath(BASE_DIR, 'btre/static')
 ]
