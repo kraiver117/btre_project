@@ -128,3 +128,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     Path.joinpath(BASE_DIR, 'btre/static')
 ]
+
+#Media Folder settings
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
