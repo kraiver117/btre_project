@@ -78,8 +78,11 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'btredb',
+        'USER': 'postgres',
+        'PASSWORD': '060496jagr',
+        'HOST': 'localhost'
     }
 }
 
@@ -125,3 +128,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     Path.joinpath(BASE_DIR, 'btre/static')
 ]
+
+#Media Folder settings
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
